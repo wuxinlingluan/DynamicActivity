@@ -1,0 +1,41 @@
+{
+  "categoryOneArray": [
+    {
+      "cacode": "10",
+      "categoryTwoArray": [
+        {
+          "activityName": "com.github.test.ShengliangTestActivity",
+          "name": "管理"
+        },
+        {
+          "activityName": "com.github.test.ShengliangTestActivity",
+          "name": "延续"
+        },
+        {
+          "activityName": "com.github.test.ShengliangTestActivity",
+          "name": "跨区备案"
+        },
+        {
+          "name": "申请"
+        }
+      ],
+      "name": "数据中心"
+    },
+    {
+      "cacode": "20",
+      "categoryTwoArray": [
+        {
+          "cacode": "20155",
+          "activityName": "com.github.test.ShengliangTestActivity",
+          "name": "夏粮五日报"
+        },
+        {
+          "cacode": "20154",
+          "activityName": "com.github.test.ShengliangTestActivity",
+          "name": "秋凉五日报"
+        }
+      ],
+      "name": "粮安工程"
+    }
+  ]
+}
