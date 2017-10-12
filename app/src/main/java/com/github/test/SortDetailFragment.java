@@ -98,17 +98,17 @@ public class SortDetailFragment extends BaseFragment<SortDetailPresenter, String
         for (int z=0;z<rightList.size();z++){
             ArrayList<SortBean.CategoryOneArrayBean.CategoryTwoArrayBean> categoryTwoArray = (ArrayList<SortBean.CategoryOneArrayBean.CategoryTwoArrayBean>) rightList.get(z).getCategoryTwoArray();
             for (int i = 0; i < categoryTwoArray.size(); i++) {
-                RightBean head = new RightBean(rightList.get(i).getName(),rightList.get(i).getName());
+                RightBean head = new RightBean(rightList.get(i).getLeft(),rightList.get(i).getLeft());
                 //头部设置为true
                 head.setTitle(true);
-                head.setTitleName(categoryTwoArray.get(i).getName());
+                head.setTitleName(categoryTwoArray.get(i).getTitle());
                 head.setTag(String.valueOf(i));
                 mDatas.add(head);
                 List<SortBean.CategoryOneArrayBean.CategoryTwoArrayBean.CategoryThreeArrayBean> categoryThreeArray = categoryTwoArray.get(i).getCategoryThreeArray();
                 for (int j = 0; j < categoryThreeArray.size(); j++) {
                     RightBean body = new RightBean(categoryThreeArray.get(j).getName(),categoryThreeArray.get(j).getActivityName());
                     body.setTag(String.valueOf(j));
-                    String name = categoryTwoArray.get(i).getName();
+                    String name = categoryTwoArray.get(i).getTitle();
                     body.setTitleName(name);
                     mDatas.add(body);
                 }

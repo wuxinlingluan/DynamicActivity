@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity implements CheckListener{
         List<String> list = new ArrayList<>();
         //初始化左侧列表数据
         for (int i = 0; i < categoryOneArray.size(); i++) {
-            list.add(categoryOneArray.get(i).getName());
+            list.add(categoryOneArray.get(i).getLeft());
         }
         mSortAdapter = new SortAdapter(mContext, list, new RvListener() {
             @Override
