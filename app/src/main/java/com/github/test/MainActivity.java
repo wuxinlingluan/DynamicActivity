@@ -14,6 +14,7 @@ import com.google.gson.Gson;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -54,6 +55,15 @@ public class MainActivity extends AppCompatActivity implements CheckListener{
         mSortAdapter = new SortAdapter(mContext, list, new RvListener() {
             @Override
             public void onItemClick(int id, int position) {
+                if (mSortDetailFragment != null) {
+                    isMoved = true;
+                    targetPosition = position;
+                    setChecked(position, true);
+                }
+            }
+
+            @Override
+            public void onItemLongClick(int id, int position) {
                 if (mSortDetailFragment != null) {
                     isMoved = true;
                     targetPosition = position;
@@ -140,7 +150,7 @@ public class MainActivity extends AppCompatActivity implements CheckListener{
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
         mSortDetailFragment = new SortDetailFragment();
         Bundle bundle = new Bundle();
-        bundle.putParcelableArrayList("right", mSortBean.getCategoryOneArray());
+        bundle.putSerializable("right", (Serializable) mSortBean.getCategoryOneArray());
         mSortDetailFragment.setArguments(bundle);
         mSortDetailFragment.setListener(this);
         fragmentTransaction.add(R.id.lin_fragment, mSortDetailFragment);

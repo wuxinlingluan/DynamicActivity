@@ -1,12 +1,15 @@
 package com.github.test;
 
-
 import java.io.Serializable;
 import java.util.List;
 
-public class SortBean implements Serializable {
+/**
+ * Created by ${sheldon} on 2017/10/12.
+ */
 
-    private static final long serialVersionUID = -5016686369895593303L;
+public class TestBean implements Serializable{
+
+    private static final long serialVersionUID = 3733478894921943094L;
     private List<CategoryOneArrayBean> categoryOneArray;
 
     public List<CategoryOneArrayBean> getCategoryOneArray() {
@@ -17,16 +20,16 @@ public class SortBean implements Serializable {
         this.categoryOneArray = categoryOneArray;
     }
 
-    public static class CategoryOneArrayBean implements Serializable  {
-        private static final long serialVersionUID = 8466730804568601710L;
+    public static class CategoryOneArrayBean implements Serializable{
+        private static final long serialVersionUID = 7510173480206936207L;
         /**
          * cacode : 10
-         * categoryTwoArray : [{"cacode":"11","categoryThreeArray":[{"activityName":"com.github.test.ShengliangTestActivity","name":"跨区域备案"},{"activityName":"com.github.test.ShengliangTestActivity","name":"企业办理入口"}],"name":"收购资格许可"}]
-         * name : 数据中心
+         * categoryTwoArray : [{"cacode":"11","categoryThreeArray":[{"activityName":"com.github.test.ShengliangTestActivity","name":"跨区域备案"},{"activityName":"com.github.test.ShengliangTestActivity","name":"企业办理入口"}],"title":"收购资格许可"},{"cacode":"12","categoryThreeArray":[{"activityName":"com.github.test.ShengliangTestActivity","name":"夏粮五日报"},{"activityName":"com.github.test.ShengliangTestActivity","name":"秋粮五日报"}],"title":"粮食流通统计"}]
+         * left : 数据中心
          */
 
         private String cacode;
-        private String name;
+        private String left;
         private List<CategoryTwoArrayBean> categoryTwoArray;
 
         public String getCacode() {
@@ -37,12 +40,12 @@ public class SortBean implements Serializable {
             this.cacode = cacode;
         }
 
-        public String getName() {
-            return name;
+        public String getLeft() {
+            return left;
         }
 
-        public void setName(String name) {
-            this.name = name;
+        public void setLeft(String left) {
+            this.left = left;
         }
 
         public List<CategoryTwoArrayBean> getCategoryTwoArray() {
@@ -54,15 +57,15 @@ public class SortBean implements Serializable {
         }
 
         public static class CategoryTwoArrayBean implements Serializable {
-            private static final long serialVersionUID = 540202207285325862L;
+            private static final long serialVersionUID = 8647139631516002692L;
             /**
              * cacode : 11
              * categoryThreeArray : [{"activityName":"com.github.test.ShengliangTestActivity","name":"跨区域备案"},{"activityName":"com.github.test.ShengliangTestActivity","name":"企业办理入口"}]
-             * name : 收购资格许可
+             * title : 收购资格许可
              */
 
             private String cacode;
-            private String name;
+            private String title;
             private List<CategoryThreeArrayBean> categoryThreeArray;
 
             public String getCacode() {
@@ -73,12 +76,12 @@ public class SortBean implements Serializable {
                 this.cacode = cacode;
             }
 
-            public String getName() {
-                return name;
+            public String getTitle() {
+                return title;
             }
 
-            public void setName(String name) {
-                this.name = name;
+            public void setTitle(String title) {
+                this.title = title;
             }
 
             public List<CategoryThreeArrayBean> getCategoryThreeArray() {
@@ -89,8 +92,8 @@ public class SortBean implements Serializable {
                 this.categoryThreeArray = categoryThreeArray;
             }
 
-            public static class CategoryThreeArrayBean implements Serializable {
-                private static final long serialVersionUID = -4708332913366019161L;
+            public static class CategoryThreeArrayBean implements Serializable{
+                private static final long serialVersionUID = -105159459121084339L;
                 /**
                  * activityName : com.github.test.ShengliangTestActivity
                  * name : 跨区域备案

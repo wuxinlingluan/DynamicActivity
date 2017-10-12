@@ -10,4 +10,5 @@ package com.github.test;
 public interface RvListener {
 
     void onItemClick(int id, int position);
+    void onItemLongClick(int id, int position);
 }

@@ -4,19 +4,32 @@
       "cacode": "10",
       "categoryTwoArray": [
         {
-          "activityName": "com.github.test.ShengliangTestActivity",
-          "name": "管理"
+          "cacode": "11",
+          "categoryThreeArray": [
+            {
+              "activityName": "com.github.test.ShengliangTestActivity",
+              "name": "跨区域备案"
+            },
+            {
+              "activityName": "com.github.test.ShengliangTestActivity",
+              "name": "企业办理入口"
+            }
+          ],
+          "name": "收购资格许可"
         },
         {
-          "activityName": "com.github.test.ShengliangTestActivity",
-          "name": "延续"
-        },
-        {
-          "activityName": "com.github.test.ShengliangTestActivity",
-          "name": "跨区备案"
-        },
-        {
-          "name": "申请"
+          "cacode": "12",
+          "categoryThreeArray": [
+            {
+              "activityName": "com.github.test.ShengliangTestActivity",
+              "name": "夏粮五日报"
+            },
+            {
+              "activityName": "com.github.test.ShengliangTestActivity",
+              "name": "秋粮五日报"
+            }
+          ],
+          "name": "粮食流通统计"
         }
       ],
       "name": "数据中心"
@@ -25,17 +38,301 @@
       "cacode": "20",
       "categoryTwoArray": [
         {
-          "cacode": "20155",
-          "activityName": "com.github.test.ShengliangTestActivity",
-          "name": "夏粮五日报"
-        },
-        {
-          "cacode": "20154",
-          "activityName": "com.github.test.ShengliangTestActivity",
-          "name": "秋凉五日报"
+          "cacode": "12",
+          "categoryThreeArray": [
+            {
+              "activityName": "com.github.test.ShengliangTestActivity",
+              "name": "学习毛邓"
+            },
+            {
+              "activityName": "com.github.test.ShengliangTestActivity",
+              "name": "学习雷锋"
+            }
+          ],
+          "name": "党建内容"
         }
       ],
-      "name": "粮安工程"
+      "name": "机关党建"
+    },
+    {
+      "cacode": "20",
+      "categoryTwoArray": [
+        {
+          "cacode": "12",
+          "categoryThreeArray": [
+            {
+              "activityName": "com.github.test.ShengliangTestActivity",
+              "name": "学历"
+            },
+            {
+              "activityName": "com.github.test.ShengliangTestActivity",
+              "name": "学习"
+            }
+          ],
+          "name": "教育人事"
+        }
+      ],
+      "name": "人事教育"
+    },
+    {
+      "cacode": "20",
+      "categoryTwoArray": [
+        {
+          "cacode": "12",
+          "categoryThreeArray": [
+            {
+              "activityName": "com.github.test.ShengliangTestActivity",
+              "name": "密码"
+            },
+            {
+              "activityName": "com.github.test.ShengliangTestActivity",
+              "name": "修改"
+            }
+          ],
+          "name": "设置"
+        }
+      ],
+      "name": "系统管理"
+    },
+    {
+      "cacode": "20",
+      "categoryTwoArray": [
+        {
+          "cacode": "12",
+          "categoryThreeArray": [
+            {
+              "activityName": "com.github.test.ShengliangTestActivity",
+              "name": "账目"
+            },
+            {
+              "activityName": "com.github.test.ShengliangTestActivity",
+              "name": "出纳"
+            }
+          ],
+          "name": "财会"
+        }
+      ],
+      "name": "财务管理"
+    },
+    {
+      "cacode": "20",
+      "categoryTwoArray": [
+        {
+          "cacode": "12",
+          "categoryThreeArray": [
+            {
+              "activityName": "com.github.test.ShengliangTestActivity",
+              "name": "粮食收购"
+            },
+            {
+              "activityName": "com.github.test.ShengliangTestActivity",
+              "name": "粮食卖出"
+            }
+          ],
+          "name": "粮库"
+        }
+      ],
+      "name": "仓储管理"
+    },
+    {
+      "cacode": "20",
+      "categoryTwoArray": [
+        {
+          "cacode": "12",
+          "categoryThreeArray": [
+            {
+              "activityName": "com.github.test.ShengliangTestActivity",
+              "name": "粮食收购"
+            },
+            {
+              "activityName": "com.github.test.ShengliangTestActivity",
+              "name": "粮食卖出"
+            }
+          ],
+          "name": "粮库"
+        }
+      ],
+      "name": "仓储管理"
+    },
+    {
+      "cacode": "20",
+      "categoryTwoArray": [
+        {
+          "cacode": "12",
+          "categoryThreeArray": [
+            {
+              "activityName": "com.github.test.ShengliangTestActivity",
+              "name": "粮食收购"
+            },
+            {
+              "activityName": "com.github.test.ShengliangTestActivity",
+              "name": "粮食卖出"
+            }
+          ],
+          "name": "粮库"
+        }
+      ],
+      "name": "仓储管理"
+    },
+    {
+      "cacode": "20",
+      "categoryTwoArray": [
+        {
+          "cacode": "12",
+          "categoryThreeArray": [
+            {
+              "activityName": "com.github.test.ShengliangTestActivity",
+              "name": "粮食收购"
+            },
+            {
+              "activityName": "com.github.test.ShengliangTestActivity",
+              "name": "粮食卖出"
+            }
+          ],
+          "name": "粮库"
+        }
+      ],
+      "name": "仓储管理"
+    },
+    {
+      "cacode": "20",
+      "categoryTwoArray": [
+        {
+          "cacode": "12",
+          "categoryThreeArray": [
+            {
+              "activityName": "com.github.test.ShengliangTestActivity",
+              "name": "粮食收购"
+            },
+            {
+              "activityName": "com.github.test.ShengliangTestActivity",
+              "name": "粮食卖出"
+            }
+          ],
+          "name": "粮库"
+        }
+      ],
+      "name": "仓储管理"
+    },
+    {
+      "cacode": "20",
+      "categoryTwoArray": [
+        {
+          "cacode": "12",
+          "categoryThreeArray": [
+            {
+              "activityName": "com.github.test.ShengliangTestActivity",
+              "name": "粮食收购"
+            },
+            {
+              "activityName": "com.github.test.ShengliangTestActivity",
+              "name": "粮食卖出"
+            }
+          ],
+          "name": "粮库"
+        }
+      ],
+      "name": "仓储管理"
+    },
+    {
+      "cacode": "20",
+      "categoryTwoArray": [
+        {
+          "cacode": "12",
+          "categoryThreeArray": [
+            {
+              "activityName": "com.github.test.ShengliangTestActivity",
+              "name": "粮食收购"
+            },
+            {
+              "activityName": "com.github.test.ShengliangTestActivity",
+              "name": "粮食卖出"
+            }
+          ],
+          "name": "粮库"
+        }
+      ],
+      "name": "仓储管理"
+    },
+    {
+      "cacode": "20",
+      "categoryTwoArray": [
+        {
+          "cacode": "12",
+          "categoryThreeArray": [
+            {
+              "activityName": "com.github.test.ShengliangTestActivity",
+              "name": "粮食收购"
+            },
+            {
+              "activityName": "com.github.test.ShengliangTestActivity",
+              "name": "粮食卖出"
+            }
+          ],
+          "name": "粮库"
+        }
+      ],
+      "name": "仓储管理"
+    },
+    {
+      "cacode": "20",
+      "categoryTwoArray": [
+        {
+          "cacode": "12",
+          "categoryThreeArray": [
+            {
+              "activityName": "com.github.test.ShengliangTestActivity",
+              "name": "粮食收购"
+            },
+            {
+              "activityName": "com.github.test.ShengliangTestActivity",
+              "name": "粮食卖出"
+            }
+          ],
+          "name": "粮库"
+        }
+      ],
+      "name": "仓储管理"
+    },
+    {
+      "cacode": "20",
+      "categoryTwoArray": [
+        {
+          "cacode": "12",
+          "categoryThreeArray": [
+            {
+              "activityName": "com.github.test.ShengliangTestActivity",
+              "name": "粮食收购"
+            },
+            {
+              "activityName": "com.github.test.ShengliangTestActivity",
+              "name": "粮食卖出"
+            }
+          ],
+          "name": "粮库"
+        }
+      ],
+      "name": "仓储管理"
+    },
+    {
+      "cacode": "20",
+      "categoryTwoArray": [
+        {
+          "cacode": "12",
+          "categoryThreeArray": [
+            {
+              "activityName": "com.github.test.ShengliangTestActivity",
+              "name": "粮食收购"
+            },
+            {
+              "activityName": "com.github.test.ShengliangTestActivity",
+              "name": "粮食卖出"
+            }
+          ],
+          "name": "粮库"
+        }
+      ],
+      "name": "仓储管理"
     }
   ]
 }

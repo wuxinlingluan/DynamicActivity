@@ -98,6 +98,7 @@ public class ItemHeaderDecoration extends RecyclerView.ItemDecoration {
         View topTitleView = mInflater.inflate(R.layout.item_title, parent, false);
         TextView tvTitle = (TextView) topTitleView.findViewById(R.id.tv_title);
         tvTitle.setText(mDatas.get(pos).getTitleName());
+        Log.i("8888888888",mDatas.get(pos).getTitleName());
         //绘制title开始
         int toDrawWidthSpec;//用于测量的widthMeasureSpec
         int toDrawHeightSpec;//用于测量的heightMeasureSpec

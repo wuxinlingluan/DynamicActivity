@@ -11,9 +11,6 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 /**
- * author pangchao
- * created on 2017/5/20
- * email fat_chao@163.com.
  */
 
 public abstract class BaseFragment<T extends BasePresenter, V> extends Fragment implements View.OnClickListener, ViewCallBack<V> {
@@ -124,8 +121,6 @@ public abstract class BaseFragment<T extends BasePresenter, V> extends Fragment 
     protected abstract T initPresenter();//初始化数据以及请求参数
 
     protected abstract void getData();
-
-
 
     @Override
     public void onDestroyView() {

@@ -54,7 +54,7 @@ public class ClassifyDetailAdapter extends RvAdapter<RightBean> {
             int itemViewType = ClassifyDetailAdapter.this.getItemViewType(position);
             switch (itemViewType) {
                 case 0:
-                    tvTitle.setText(sortBean.getName());
+                    tvTitle.setText(sortBean.getTitleName());
                     break;
                 case 1:
                     tvCity.setText(sortBean.getName());

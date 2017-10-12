@@ -16,6 +16,13 @@ public abstract class RvHolder<T> extends RecyclerView.ViewHolder {
                 mListener.onItemClick(v.getId(), getAdapterPosition());
             }
         });
+        itemView.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View view) {
+            mListener.onItemLongClick(view.getId(), getAdapterPosition());
+                return true;
+            }
+        });
     }
 
     public abstract void bindHolder(T t, int position);

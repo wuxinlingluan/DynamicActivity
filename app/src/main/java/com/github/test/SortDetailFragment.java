@@ -62,7 +62,6 @@ public class SortDetailFragment extends BaseFragment<SortDetailPresenter, String
                     case R.id.content:
                         content = "content";
                         break;
-
                 }
                 try {
                     Intent intent = new Intent();
@@ -79,8 +78,12 @@ public class SortDetailFragment extends BaseFragment<SortDetailPresenter, String
                 text.setTextSize(25);
                 snackbar.show();
             }
-        });
 
+            @Override
+            public void onItemLongClick(int id, int position) {
+              //长按事件
+            }
+        });
         mRv.setAdapter(mAdapter);
         mDecoration = new ItemHeaderDecoration(mContext, mDatas);
         mRv.addItemDecoration(mDecoration);
@@ -91,25 +94,26 @@ public class SortDetailFragment extends BaseFragment<SortDetailPresenter, String
 
 
     private void initData() {
-        ArrayList<SortBean.CategoryOneArrayBean> rightList = getArguments().getParcelableArrayList("right");
-        for (int i = 0; i < rightList.size(); i++) {
-            RightBean head = new RightBean(rightList.get(i).getName(),rightList.get(i).getActivityName());
-            //头部设置为true
-            head.setTitle(true);
-            head.setTitleName(rightList.get(i).getName());
-            head.setTag(String.valueOf(i));
-            mDatas.add(head);
-            List<SortBean.CategoryOneArrayBean.CategoryTwoArrayBean> categoryTwoArray = rightList.get(i).getCategoryTwoArray();
-            for (int j = 0; j < categoryTwoArray.size(); j++) {
-                RightBean body = new RightBean(categoryTwoArray.get(j).getName(),categoryTwoArray.get(j).getActivityName());
-                body.setTag(String.valueOf(i));
-                String name = rightList.get(i).getName();
-                body.setTitleName(name);
-                mDatas.add(body);
+        ArrayList<SortBean.CategoryOneArrayBean> rightList = (ArrayList<SortBean.CategoryOneArrayBean>) getArguments().getSerializable("right");
+        for (int z=0;z<rightList.size();z++){
+            ArrayList<SortBean.CategoryOneArrayBean.CategoryTwoArrayBean> categoryTwoArray = (ArrayList<SortBean.CategoryOneArrayBean.CategoryTwoArrayBean>) rightList.get(z).getCategoryTwoArray();
+            for (int i = 0; i < categoryTwoArray.size(); i++) {
+                RightBean head = new RightBean(rightList.get(i).getName(),rightList.get(i).getName());
+                //头部设置为true
+                head.setTitle(true);
+                head.setTitleName(categoryTwoArray.get(i).getName());
+                head.setTag(String.valueOf(i));
+                mDatas.add(head);
+                List<SortBean.CategoryOneArrayBean.CategoryTwoArrayBean.CategoryThreeArrayBean> categoryThreeArray = categoryTwoArray.get(i).getCategoryThreeArray();
+                for (int j = 0; j < categoryThreeArray.size(); j++) {
+                    RightBean body = new RightBean(categoryThreeArray.get(j).getName(),categoryThreeArray.get(j).getActivityName());
+                    body.setTag(String.valueOf(j));
+                    String name = categoryTwoArray.get(i).getName();
+                    body.setTitleName(name);
+                    mDatas.add(body);
+                }
             }
-
         }
-
         mAdapter.notifyDataSetChanged();
         mDecoration.setData(mDatas);
     }
